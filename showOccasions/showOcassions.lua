@@ -13,18 +13,7 @@ if alphaDashBoardBannerFile == nil then
 end
 
 if OCCASIONS_ART.DATES_ASCII_ART[current_day_and_month] == nil then
-  alphaDashBoardBannerFile:write([[
-
-  ██████   █████                   █████   █████  ███
- ░░██████ ░░███                   ░░███   ░░███  ░░░
-  ░███░███ ░███   ██████   ██████  ░███    ░███  ████  █████████████
-  ░███░░███░███  ███░░███ ███░░███ ░███    ░███ ░░███ ░░███░░███░░███
-  ░███ ░░██████ ░███████ ░███ ░███ ░░███   ███   ░███  ░███ ░███ ░███
-  ░███  ░░█████ ░███░░░  ░███ ░███  ░░░█████░    ░███  ░███ ░███ ░███
-  █████  ░░█████░░██████ ░░██████     ░░███      █████ █████░███ █████
- ░░░░░    ░░░░░  ░░░░░░   ░░░░░░       ░░░      ░░░░░ ░░░░░ ░░░ ░░░░░
-
-  ]])
+  alphaDashBoardBannerFile:write(configdata["DEFAULT_BANNER"])
 else
   alphaDashBoardBannerFile:write(OCCASIONS_ART.DATES_ASCII_ART[current_day_and_month])
 end
